@@ -6,11 +6,18 @@
   "scripts": {
     "test": "node_modules/.bin/mocha --reporter spec"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nisaacson/mostcommon.git"
+  },
   "author": {
     "name": "Noah Isaacson"
   },
   "license": "BSD",
   "readme": "# Most Common\nGiven an array of regex patterns and a block of text, find the input pattern with the most matches in the text\n\n# Usage\n```\nvar inputs = [\n  'a1',\n  'a2',\n  'a3',\n  'a4'\n];\n\nvar text = 'Lorem a1 ipsum a1 dolor a1 sit a2 amet, a2 consectetur a3 adipiscing'\n\n// max should be 'a1'\nvar max = mostcommon(inputs, text);\n```\n",
   "readmeFilename": "README.MD",
+  "devDependencies": {
+    "should": "~1.2.1",
+    "mocha": "~1.8.1"
+  }
 }
