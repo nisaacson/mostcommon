@@ -1,4 +1,3 @@
-var inspect = require('eyes').inspector();
 module.exports = function getMostCommonElement(inputs, text) {
   var set = {};
   var maxMatches = 0;
